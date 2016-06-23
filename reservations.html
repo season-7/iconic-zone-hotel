@@ -14,8 +14,10 @@
  </head>
  <style>
      #main-img{background: url("./img/main-img.jpg")no-repeat;background-size: 100% 100%;}
+     #back-img{background: url("./img/intro6.jpg")no-repeat;background-size: 100% 100%;}
  </style>
 <body>
+  <!-- A responsive left-fixed navbar that collapses on smaller screens-->
   <nav class="navbar navbar-default" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -25,8 +27,8 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
             </a>
-        			<a class="navbar-brand" href="index.html">
-        				logo
+        			<a class="navbar-brand" href="reservations.html">
+        				RESERVATIONS
         			</a>
       		</div>
       		<div id="sidebar-wrapper" class="sidebar-toggle">
@@ -39,12 +41,62 @@
           </div>
   	</div>
 </nav>
-
-
+<!-- Main Content -->
+<section>
+<div class="container">
+<div id ="contents">
+    <div id="back-img"></div>
+    <div id="text-content">
+      <h3>So many Visitors!</h3>
+      <p>Due to the high number of people who visit this beautiful place,we sometimes tend to end up having lots of visitors which causes spaces to be minimized since we have a limited capacity of rooms.</p>
+      <h3>Solution</h3>
+      <p>The form as shown is used to allow people to book their stay here allowing flexibility to everyone.You can fill your details here to be provided for a space in our fine hotel.</p>
+    </div>
+    <div id="form-content">
+<!--FORM-->
+<form class="register" action="#" method="post">
+  <fieldset class="register-group">
+    <label>
+      Full Name
+      <input type="text" name="name" placeholder="Full name" required>
+    </label>
+    <label>
+      Phone Number
+      <input type="tel" name="number" placeholder="Phone Number" required>
+    </label>
+    <label>
+      Email
+      <input type="email" name="email" placeholder="Email" required>
+    </label>
+    <label>
+      Arrival
+      <input type="date" name="time" placeholder="Arrival" required>
+    </label>
+    <label>
+      Departure
+      <input type="date" name="time" placeholder="Departure" required>
+    </label>
+    <label>
+    Packages
+    <select name="package">
+      <option value="1-Room" selected>1-Room</option>
+      <option value="2-Rooms">2-Rooms</option>
+      <option value="3-Rooms">3-Rooms</option>
+      <option value="Conference">Conference</option>
+    </select>
+  </label>
+</fieldset>
+<input class="btn btn-default" type="submit" name="submit" value="SUBMIT" onclick="success()">
+</form>
+</div>
+</div>
+</div>
+</section>
 
 <!-- javascript links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="./js/main.js"></script>
+<script type="text/javascript" src="main.js"></script>
  </body>
  </html>
