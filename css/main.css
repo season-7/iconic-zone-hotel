@@ -1,8 +1,10 @@
+/*--- Sidebar Navigation menu --- */
+
 #sidebar-wrapper {
   top: 52px;
   left: -200px;
   width: 200px;
-  background-color: black;
+  background-color:#191919;
   color: white;
   position: fixed;
   height: 100%;
@@ -42,4 +44,11 @@
     transition: 0s;
     left: 200px;
   }
+}
+
+
+/*-- Main Content ---*/
+#main-img{height:400px;}
+@media (max-width:768px) {
+#contents{float:right;}
 }
