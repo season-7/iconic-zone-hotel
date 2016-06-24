@@ -71,10 +71,19 @@ input{
 }
 
 .register-group input {
-  border: 4px solid black;
+  border: 2px solid #B69CBF;
   border-radius: 5px;
   color: black;
   display:block;;
   margin: 5px 0 27px 0;
   padding: 1px 1px;
+}
+
+.btn{
+  cursor: pointer;
+  color: #575B7F;
+}
+
+.btn-alt{
+  border: 3px solid #575B7F;
 }

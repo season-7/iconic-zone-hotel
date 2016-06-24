@@ -28,5 +28,5 @@ $(document).ready(function() {
 });
 
 function success(){
-    alert("SUCCESS!");
+    alert("ERROR!");
 }
