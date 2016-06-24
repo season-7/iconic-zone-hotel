@@ -16,30 +16,27 @@
      #main-img{background: url("./img/main-img.jpg")no-repeat;background-size: 100% 100%;}
  </style>
 <body>
-  <nav class="navbar navbar-default" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<a id="menu-toggle" href="#" class="navbar-toggle">
-					<span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-            </a>
-        			<a class="navbar-brand" href="index.html">
-        				logo
-        			</a>
-      		</div>
-      		<div id="sidebar-wrapper" class="sidebar-toggle">
-      			<ul class="sidebar-nav">
-                <li><a href="index.html">Home</a></li>
-      		    	<li><a href="reservations.html">Reservations</a></li>
-      		    	<li><a href="gallery.html">Gallery</a></li>
-      		    	<li><a href="offers.html">Offers</a></li>
-      		  </ul>
-          </div>
-  	</div>
-</nav>
+  <!--Page Wrapper -->
+  <div id="wrapper">
 
+  <!-- A responsive left-sidebar that collapses on smaller screens-->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand"><a href="#">ICONIC ZONE HOTEL</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="offers.html">Offers</a></li>
+    </ul>
+  </div>
+  <!-- Main Content -->
+  <section class="page-content-wrapper">
+  <div class="container-fluid">
+  <div class="row">
+  <div id ="col-lg-12">
+
+  <!--Icon to toggle sidebar-->
+  <i id="menu-toggle" href="#menu-toggle"class="fa fa-navicon icon-large"></i>
 <!-- javascript links -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
