@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- site & bootstrap css links -->
+  <!-- site,font-awesome & bootstrap css links -->
 
-   <link media="all" href="./css/main.css" type="text/css" rel="stylesheet"/>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="./css/main.css" type="text/css" rel="stylesheet"/>
+   <link href="./css/bootstrap.css" type="text/css" rel="stylesheet"/>
+   <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+   <link href="./fonts/font-awesome-4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
 
  </head>
  <style>
-     #main-img{background: url("./img/main-img.jpg")no-repeat;background-size: 100% 100%;}
-     #back-img{background: url("./img/intro6.jpg")no-repeat;background-size: 100% 100%;}
+    #back-img{background: url("./img/intro6.jpg")no-repeat;background-size: 100% 100%;}
  </style>
 <body>
   <!--Page Wrapper -->
@@ -70,13 +70,20 @@
       <input type="date" name="time" placeholder="Departure" required>
     </label>
     <label>
-    Packages
-    <select name="package">
-      <option value="1-Room" selected>1-Room</option>
-      <option value="2-Rooms">2-Rooms</option>
-      <option value="3-Rooms">3-Rooms</option>
-      <option value="Conference">Conference</option>
+    Room Packages
+    <select name="room-package">
+      <option value="Premium Room" selected>Premium Room</option>
+      <option value="Premium Plus">Premium</option>
+      <option value="Premier Suite">3-Rooms</option>
     </select>
+  </label>
+  <label>
+  Conference Packages
+  <select name="conference-package">
+    <option value="Conference" selected>Conference</option>
+    <option value="Exhibition">Exhibition</option>
+    <option value="Cocktail">Cocktail</option>
+  </select>
   </label>
 </fieldset>
 <input class="btn btn-alt" type="submit" name="submit" value="SUBMIT" onclick="success()">
